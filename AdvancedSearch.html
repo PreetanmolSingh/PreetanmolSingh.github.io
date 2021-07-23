@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <style>
+            #label{
+            color:#d93025;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            padding-left: 20px;         
+            }
+            .right {
+             position: absolute;
+             right: 120px;
+             width: 150px;            
+             padding: 13px;
+            } 
+        </style>
+    </head>
+        <a href="index.html" class="right" >Google Search</a>
+        <a href="ImageSearch.html" class="right" style="right:0px;" >Image Search</a>
+        <img src="googlelogo.png" alt="Google Logo" width="210" height="95" style="padding: 20px;">
+        <br>
+        <label id="label">Advanced Search</label>
+        <hr>
+        <div style="text-align:left; padding-left: 40px;">
+            <br>
+            <h4>Find pages with...</h4>
+            <br>
+            <form action="https://google.com/search" style="padding-left: 50px;">
+                <div class="form-group row" >
+                    <label for="inputAllthesewords" class="col-sm-2 col-form-label">All these words:</label>
+                    <div class="col-sm-5">
+                      <input type="text" name="q" class="form-control" id="inputAllthesewords" width="350px">
+                    </div>
+                    <label style="font-weight: lighter;color: #666;">Type the important words:  tricolor rat terrier</label>
+                </div>
+                <div class="form-group row">
+                    <label for="inputAllthesewords" class="col-sm-2 col-form-label">This exact word or phrase:</label>
+                    <div class="col-sm-5">
+                      <input type="text" name="q" class="form-control" id="inputAllthesewords" width="350px">
+                    </div>
+                    <label style="font-weight: lighter;color: #666;"> Put exact words in quotes:  "rat terrier"</label>
+                </div>
+                <div class="form-group row">
+                    <label for="inputAnyofthese" class="col-sm-2 col-form-label">Any of these words:</label>
+                    <div class="col-sm-5">
+                      <input type="text" name="q" class="form-control" id="inputAnyofthese" width="350px">
+                    </div>
+                    <label style="font-weight: lighter;color: #666;">Type OR between all the words you want:  miniature OR standard</label>
+                </div>
+                <div class="form-group row">
+                    <label for="inputNoneofthese" class="col-sm-2 col-form-label">None of these words:</label>
+                    <div class="col-sm-5">
+                      <input type="text" name="q" class="form-control" id="inputNoneofthese" width="350px">
+                    </div>
+                    <label style="font-weight: lighter;color: #666;">Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</label>
+                </div>
+
+                <div style="padding-top: 8px;padding-right: 60px; text-align: center;">
+                    <input class="btn btn-primary" type="submit" name="btnK" value="Advanced Search" >
+                    
+                </div>
+        </div>
+        
+
+    </body>
+</html>
